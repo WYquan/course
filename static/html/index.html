@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<script type="text/javascript" src="../libs/angular.js"></script>
+	<script type="text/javascript" src="../libs/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+	<script type="text/javascript" src="../libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="../libs/ui-bootstrap-tpls-0.14.3.js"></script>
+	<script type="text/javascript" src="../libs/ui-bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/index.css" />
+</head>
+<body ng-app="course">
+	<div class="coursr_box" ng-controller="indexController">
+		<div ng-include="'./common/head.html'"></div>
+
+		<div >
+	       <div ui-view=""></div>
+		</div>
+	</div>
+</body>
+</html>

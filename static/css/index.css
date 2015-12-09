@@ -1,0 +1,68 @@
+body{
+	height: 100%;
+    width: 100%;
+    min-width: 1200px;
+}
+.head{
+	background: #222;
+}
+.course_head{
+	width: auto;
+    padding-right: 20px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1000;
+
+
+}
+.course_head .navbar{
+	border: none;
+}
+.course_head .navbar .logo{
+	overflow: hidden;
+	margin: 0 20px;
+}
+.course_head .navbar .logo a{
+	width:140px;
+	height:60px;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.course_head .navbar .navbar-header button{
+	position:absolute;
+	left:180px;
+	top:5px;
+}
+.course_head .navbar .navbar-collapse .navbar-nav li:hover{
+	background: #080808;
+}
+.course_head .navbar .navbar-collapse .navbar-nav li a{
+   width: 80px;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   padding: 0;
+}
+.course_head .navbar .login-area .navbar-nav li:hover{
+   background: red;
+}
+.course_head .navbar .login-area .navbar-nav li a{
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   padding: 0;
+}
+.course_head .navbar .login-area {
+   position:absolute;
+   right:20px;
+   float:right;
+   top:0;
+}
+
+
+  
+
