@@ -1,13 +1,14 @@
 body{
-	height: 100%;
+  height: 100%;
     width: 100%;
     min-width: 1200px;
+    padding-bottom: 200px;
 }
 .head{
-	background: #222;
+  background: #222;
 }
 .course_head{
-	width: auto;
+  width: auto;
     padding-right: 20px;
     height: 60px;
     margin: 0 auto;
@@ -17,27 +18,27 @@ body{
 
 }
 .course_head .navbar{
-	border: none;
+  border: none;
 }
 .course_head .navbar .logo{
-	overflow: hidden;
-	margin: 0 20px;
+  overflow: hidden;
+  margin: 0 20px;
 }
 .course_head .navbar .logo a{
-	width:140px;
-	height:60px;
+  width:140px;
+  height:60px;
     text-align: center;
     line-height: 30px;
     overflow: hidden;
 }
 
 .course_head .navbar .navbar-header button{
-	position:absolute;
-	left:180px;
-	top:5px;
+  position:absolute;
+  left:180px;
+  top:5px;
 }
 .course_head .navbar .navbar-collapse .navbar-nav li:hover{
-	background: #080808;
+  background: #080808;
 }
 .course_head .navbar .navbar-collapse .navbar-nav li a{
    width: 80px;
@@ -46,8 +47,17 @@ body{
    text-align: center;
    padding: 0;
 }
+
+.course_head .navbar .login-area .navbar-nav {
+  overflow: hidden;
+  margin: 0;
+}
 .course_head .navbar .login-area .navbar-nav li:hover{
    background: red;
+}
+.course_head .navbar .login-area .navbar-nav li{
+  float: right;
+ 
 }
 .course_head .navbar .login-area .navbar-nav li a{
    width: 60px;
@@ -55,12 +65,23 @@ body{
    line-height: 60px;
    text-align: center;
    padding: 0;
+
 }
 .course_head .navbar .login-area {
    position:absolute;
    right:20px;
-   float:right;
    top:0;
+}
+
+
+/* 轮播 */
+.carousel .carousel-inner .item_box{
+  width: 100%;
+  height: 600px;
+}
+.carousel .carousel-inner .item_box img{
+  width: 100%;
+  height: 100%;
 }
 
 
