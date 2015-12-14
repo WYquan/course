@@ -10,30 +10,46 @@ app.controller('indexController', ['$scope','$rootScope', function($scope,$rootS
 app.run( function($rootScope,$state){
 	
 	$rootScope.$on('$stateChangeStart',function(event,toState) {
-		$rootScope.current=toState.name;
+		$rootScope.cur=toState.name;
 	});
 })
 
 app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider) {
 	$urlRouterProvider.when('','/home');
 	$stateProvider
-	.state('home',{
-		url:'/home',
-		templateUrl:'./common/home.html'
+	.state('web',{
+		url:'/web:id',
+	   templateUrl:'./course/course.html'
 	})
-	.state('course',{
-       url:'/course',
+	.state('java',{
+       url:'/java:id',
        templateUrl:'./course/course.html'
 	})
-	.state('plan',{
-       url:'/plan',
-       templateUrl:'./plan/plan.html'
+	.state('photo',{
+       url:'/photo:id',
+       templateUrl:'./course/course.html'
 	})
-	.state('share',{
-       url:'/share',
-       templateUrl:'./share/share.html'
+	.state('sport',{
+       url:'/sport:id',
+       templateUrl:'./course/course.html'
+	})
+	.state('jita',{
+       url:'/jita:id',
+       templateUrl:'./course/course.html'
+	})
+	.state('dance',{
+       url:'/dance:id',
+       templateUrl:'./course/course.html'
+	})
+	.state('kufu',{
+       url:'/kufu:id',
+       templateUrl:'./course/course.html'
 	})
 	
+}])
+
+app.controller('courseController', ['$scope','$stateParams', function($scope,$stateParams){
+	$scope.course=$stateParams.id;
 }])
 
 

@@ -38,6 +38,8 @@ background-color: rgba(0,0,0,.05);
 	width:1280px; 
 	margin-top:20px;
 }
+
+
 .course_box .container .course_list{
     margin:0 20px;
     background-color: #fff;
@@ -57,4 +59,76 @@ background-color: rgba(0,0,0,.05);
 }
 .course_box .container .course_list .item_list li a {
   color: #777;	
+}
+
+
+.col-md-9{
+	padding-left: 0;
+}
+.col-md-3{
+	padding-right: 0;
+}
+.list_detail{
+	border-radius: 15px;
+	margin: 0;
+	padding: 0;
+}
+.list_detail .jumbotron{
+   background-color: white;
+   text-align: center;
+}
+.list_detail .jumbotron h2{
+   color: #7B7070;
+}
+.list_detail .jumbotron p{
+ color: #B99A9A
+}
+
+
+.list_detail .course_one {
+	text-align: center;
+	background-color: white;
+	margin-top: 70px;
+	border-radius: 10px 10px 0 0;
+
+}
+.list_detail .course_one h3{
+   padding: 20px 0;
+   color: #7F8E52;
+   background-color: #E8E8E7;
+   font-size: 30px;
+   border-radius: 10px 10px 0 0;
+}
+
+.list_detail .course_one .row{
+	padding: 0 30px;
+}
+
+.list_detail .course_one .col-md-4{
+	height: 400px;
+	overflow: hidden;
+	padding: 0;
+
+
+}
+.list_detail .course_one .col-md-4 .box{
+	/* border: 1px solid #f9cacb; */
+	text-align: left;
+	padding: 20px;
+   
+}
+
+.list_detail .course_one .col-md-4 img{
+   width: 100%;
+   height: 190px;
+}
+
+.list_detail .course_one .col-md-4 h4{
+	line-height: 18px;
+    color: #14191e;
+    font-weight: bold;
+}
+.list_detail .course_one .col-md-4 p{
+  color: #b4bbbf;
+  text-overflow: ellipsis
 }
