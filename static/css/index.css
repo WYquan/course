@@ -5,7 +5,9 @@
 }
 body{
 background-color: rgba(0,0,0,.05);
+padding-bottom: 100px;
 }
+
 
 .head .course_head{
 	width:100%;
@@ -92,13 +94,34 @@ background-color: rgba(0,0,0,.05);
 	border-radius: 10px 10px 0 0;
 
 }
-.list_detail .course_one h3{
-   padding: 20px 0;
-   color: #7F8E52;
-   background-color: #E8E8E7;
-   font-size: 30px;
-   border-radius: 10px 10px 0 0;
+
+.list_detail .course_one .title{
+	background-color: #E8E8E7;
+	border-radius: 10px 10px 0 0;
+	padding: 20px 0 0 30px;
+	height: 60px;
+	text-align: left;
 }
+.list_detail .course_one .title a{
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 60px;
+    margin-right: 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: "微软雅黑";
+  
+}
+.list_detail .course_one .title .active{
+	border-bottom: 2px solid #A9A49C;
+	font-weight: bold;
+}
+
+
 
 .list_detail .course_one .row{
 	padding: 0 30px;
