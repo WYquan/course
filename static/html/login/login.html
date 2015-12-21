@@ -1,1 +1,28 @@
-login.html
+
+<div class="container login_container" >
+	<div class="login_box">
+		<div class="login_way">
+			<a href="javascript:void(0)" ng-class="{active:cur=='login'}" ng-click="changeState(1)">Login</a>
+			<a href="javascript:void(0)" ng-class="{active:cur=='sign'}" ng-click="changeState(2)">Sign up</a>
+		</div>
+		<div class="content">
+			<form ng-show="flag">
+				<div class="form-group">
+					<input type="text" class="form-control" id="user" placeholder="username" ></div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="psw" placeholder="Password"></div>
+				<button  class="btn btn-danger btn-block">login</button>
+			</form>
+
+			<form ng-show="!flag">
+				<div class="form-group">
+					<input type="text" class="form-control" id="user" placeholder="username" ></div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="psw" placeholder="Password"></div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="psw" placeholder="Same password"></div>
+				<button  class="btn btn-danger btn-block">sign in</button>
+			</form>
+		</div>
+	</div>
+</div>
