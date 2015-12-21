@@ -21,6 +21,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 			url: '/home',
 			templateUrl: './common/home.html'
 		})
+		.state('login',{
+			url: '/login:id',
+            templateUrl: './login/login.html'
+		})
 		.state('home.web', {
 			url: '/web:id',
 			templateUrl: './course/course.html'
@@ -53,6 +57,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 }])
 
 app.controller('courseController', ['$scope', '$stateParams', '$http', function($scope, $stateParams, $http) {
+	$scope.serverPager = {
+		totalItems: 20,
+		currentPage: 1,
+		itemPerPage: 5
+	}
+
 	$scope.cousrInfo = {
 		id: '',
 		difficulty: ''
@@ -86,37 +96,41 @@ app.controller('courseController', ['$scope', '$stateParams', '$http', function(
 			});
 
 	}
-    
-    var showPanel=function(a,b,c,d){
-    	$scope.panel={
-    		all:a,
-    		easy:b,
-    		medium:c,
-    		difficult:d
-    	}
-    }
+
+	var showPanel = function(a, b, c, d) {
+		$scope.panel = {
+			all: a,
+			easy: b,
+			medium: c,
+			difficult: d
+		}
+	}
 
 	$scope.changeOption = function(id) {
 		if (id == 1) {
 			$scope.option = "first";
 			$scope.cousrInfo.difficulty = "all";
-			showPanel(true,false,false,false);
+			showPanel(true, false, false, false);
 		}
 		if (id == 2) {
 			$scope.option = "second";
 			$scope.cousrInfo.difficulty = "easy";
-			showPanel(false,true,false,false);
+			showPanel(false, true, false, false);
 		}
 		if (id == 3) {
 			$scope.option = "third";
 			$scope.cousrInfo.difficulty = "medium";
-            showPanel(false,false,true,false);
+			showPanel(false, false, true, false);
 		}
 		if (id == 4) {
 			$scope.option = "forth";
 			$scope.cousrInfo.difficulty = "difficult";
-			showPanel(false,false,false,true);
+			showPanel(false, false, false, true);
 		}
 	}
 
+}])
+
+app.controller('login', ['$scope', function($scope){
+    
 }])
